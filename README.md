@@ -48,6 +48,7 @@ define('ALLOW_FILE_TYPES', 'return array(
 
 ```
 require "./Image.php";
+require "./http.php";
 ```
 接着，需要在try-catch块中创建该工具类的实例，并执行函数。
 需要用到的参数如下：
