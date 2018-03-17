@@ -3,6 +3,7 @@
 
 - 默认允许图片类型为 `jpg` `png`
 - 默认关闭自定义图片宽高比例校验，详见 Image.php L139
+- 默认文件名会按照时间参数重命名，形如 
 
 **更新说明**
 
@@ -31,7 +32,7 @@
 
 `FILE_PATH` 上传到服务器的文件路径
 
-`UPLOAD_FILE_MAX_KB` 最大的图片大小
+`UPLOAD_FILE_MAX_B` 最大的图片大小，单位是b，1`Mb` = 1024`Kb` = 1024^2 `b`
 
 `ALLOW_FILE_TYPES` 允许的文件类型转化数组
 
@@ -42,7 +43,7 @@
 //上传到服务器的文件路径
 define('FILE_PATH', 'upload/');
 //最大的图片大小
-define('UPLOAD_FILE_MAX_KB', 2 * 1024 * 1024);
+define('UPLOAD_FILE_MAX_B', 2 * 1024 * 1024);
 //允许图片类型
 define('ALLOW_FILE_TYPES', 'return array(
                 "image/png" => ".png",
