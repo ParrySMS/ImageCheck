@@ -85,8 +85,8 @@ class Image
 
         //上传文件过大 报错
         $size = $image['size'];
-        if ($size > UPLOAD_FILE_MAX_KB) {
-            $sizeM = UPLOAD_FILE_MAX_KB/1024/1024;
+        if ($size > UPLOAD_FILE_MAX_B) {
+            $sizeM = UPLOAD_FILE_MAX_B/1024/1024;
             throw new Exception('文件大小不得超过' . $sizeM . 'M。 当前文件大小为 $size', 500);
         }
 
@@ -129,14 +129,14 @@ class Image
         $this->attrTypeCheck($attrNum,$attrArray);
 
         /*
-         * 自定义的图片比例要求  默认关闭
+         * 自定义的图片比例要求 默认关闭
          * 如果页面有固定的图片裁切器
          * 例如：用户上传图片后，再网页上会进行一个1:1矩形的裁切操作后，才能上传图片（常见于头像上传）
          * 则下面的检查能够保证图片的比例
          */
 
         //宽高比例为 1：1
-       // $this->RatioCheck($width,$height,1,1);
+        //$this->RatioCheck($width,$height,1,1);
 
         /**
          * 文件改名以具体情况具体分析
