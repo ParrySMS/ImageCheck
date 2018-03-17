@@ -24,6 +24,16 @@ define('ALLOW_FILE_TYPES', 'return array(
             );'
 );
 
+// 补充其他格式
+//                "image/tiff" => ".tiff",
+//                "image/vnd.wap.wbmp" => ".wbmp",
+//                "image/x-icon" => ".ico",
+//                "image/x-jng"  => ".jng",
+//                "image/x-ms-bmp" => ".bmp",
+//                "image/svg+xml" => ".svg",
+//                "image/webp" => ".webp"
+
+
 
 
 
