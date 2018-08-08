@@ -115,14 +115,7 @@ class Image
          * 9 = JPC，10 = JP2，11 = JPX，12 = JB2，
          * 13 = SWC，14 = IFF,15 = WBMP，16 = XBM
          */
-
-        //将图片类型标记存入数组,键表示attrNum,值表示类型
-        $attr =['unknown',
-            'GIF','JPG','PNG', 'SWF',
-            'PSD','BMP','TIFF(intel byte order)','TIFF(motorola byte order)',
-            'JPC','JP2','JPX','JB2',
-            'SWC','IFF','WBMP','XBM'
-        ];
+       
         //只允许的类型标记  2 = JPG，3 = PNG
         $attrArray = [2, 3];
         //支持格式较少 若允许的文件类型并未全部出现在类型标记中 则暂不启用 注释掉attrTypeCheck函数所在行即可
