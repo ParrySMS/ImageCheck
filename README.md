@@ -1,6 +1,9 @@
 # ImageCheck
 一个php的图片检查与保存工具类
 
+## 详细使用说明：
+[调用流程的详细说明 http://exp.szer.me/parry/blog/wordpress/index.php/2018/05/01/imagecheckrm/](http://exp.szer.me/parry/blog/wordpress/index.php/2018/05/01/imagecheckrm/)
+
 
 - **此文件检查类通过throw Exception（抛出异常）来进行检查报错，所有函数为单向值传递，不影响`$_FILES`文件变量的任何值**
 - 默认允许图片类型为 `jpg` `png`
